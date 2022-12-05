@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/.png" href="./assets/epsilon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Bernardo Witkoski - Analisador Léxico</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="info">
+            <div>
+                <img id="logo" src="./assets/epsilon.png" class="" alt="epsilon_logo">
+            </div>
+            <h1>Analisador Léxico</h1>
+            <h5>Bernardo Witkoski</h5>
+        </div>
+    </header>
+    <main>
+        <div class="container margin-top-default">
+
+            <h2>Adicionar tokens</h2>
+            <div class="input">
+                <div class="chips chips-placeholder" id="chips"></div>
+            </div>
+
+            <button class="btn green lighten-1 waves-effect waves-light" type="submit"
+                onclick="analisador.adicionar_tabela();" name="action">Montar tabela
+            </button>
+
+            <h2>Validar tokens</h2>
+            <div class="input">
+                <input id="token" type="text" , placeholder="Digite o token">
+            </div>
+
+            <table class="table responsive-table striped" id="tabela">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                        <th>I</th>
+                        <th>J</th>
+                        <th>K</th>
+                        <th>L</th>
+                        <th>M</th>
+                        <th>N</th>
+                        <th>O</th>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                        <th>U</th>
+                        <th>V</th>
+                        <th>W</th>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Z</th>
+                    </tr>
+                </thead>
+                <tbody class="scale-transition"></tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <footer>
+                <h3 id="h3">Analisador Léxico</h3>
+                    <p id="p">
+                        Aplicação desenvolvida para a disciplina <br>
+                        de Linguagens Formais na Universidade Regional Integrada do <br>
+                        Alto Uruguai e das Missões (URI) de Erechim-RS
+                    </p>
+                    <p class="copyright">
+                        Copyright © 2022, All Right Reserved - URI Erechim
+                    </p>
+        </footer>
+    </main>
+</body>
+    <script 
+        src="scripts/Analisador.js">
+    </script>
+
+    <script>
+        const analisador = new Analisador();
+        analisador.init();
+    </script>
+
+</html>
